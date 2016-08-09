@@ -56,12 +56,20 @@ Template.body.events({
   'mouseenter .product-price' (event) {
     event.preventDefault();
 
-    console.log('enter')
+    const price = event.target;
+
+    const text = $(price).find('span');
+    text.html('Buy Now');
+
   },
   'mouseleave .product-price' (event) {
     event.preventDefault();
 
-    console.log('exit')
+    const price = event.target;
+
+    const text = $(price).find('span');
+    text.html('$100');
+
   },
   // 'mouseenter .product-price': (event, template) ->
   //   console.log "mousehover", event
