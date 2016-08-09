@@ -38,6 +38,8 @@ Template.body.events({
     });
     modal.style.display = "none";
 
+    target.reset();
+
   },
   'click #myBtn' (event) {
     event.preventDefault();
