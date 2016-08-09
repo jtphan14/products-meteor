@@ -71,9 +71,5 @@ Template.body.events({
     text.html('$100');
 
   },
-  // 'mouseenter .product-price': (event, template) ->
-  //   console.log "mousehover", event
-  // "mouseleave #elementID": (event, template) ->
-  //   console.log "mouseout", event
 
 });
