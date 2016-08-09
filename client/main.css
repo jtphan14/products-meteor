@@ -1,5 +1,28 @@
 /* CSS declarations go here */
 
+body {
+  background-color: #BAB8B8;
+}
+
 .product {
   border: 1px black;
+}
+
+.product-price {
+  background-color: #90C3D4;
+  color: white;
+  padding: 10px;
+}
+
+.product-description {
+  background-color: white;
+}
+
+.product-picture {
+  background-color: white;
+}
+.product-name {
+  font-size: 14px;
+  font-weight: bolder;
+  background-color: white;
 }
