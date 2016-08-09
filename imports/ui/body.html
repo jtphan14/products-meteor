@@ -4,7 +4,7 @@
       <li><a href="#logo">Fifty&Fifty</a></li>
       <li><a href="#Home">Home</a></li>
       <li><a href="#products">Products</a></li>
-      <li style="float:right"><a class="active" href="#Account-Info">Account Info</a></li>
+      <li style="float:right"><a href="#Account-Info">Account Info</a></li>
       <li style="float:right">    {{> loginButtons}}</li>
     </ul>
   </nav>
@@ -31,7 +31,7 @@
         <form class="new-product">
           <input type="text" name="name" placeholder="Type to add Product Name">
           <input type="text" name="description" placeholder="Type to add Product Description">
-          <input type="text" name="price" placeholder="Type to add Product Price">
+          <input type="integer" name="price" placeholder="Type to add Product Price">
           <input type="submit" value="Submit">
         </form>
       </div>
@@ -52,7 +52,7 @@
       {{description}}
     </div>
     <div class="product-price">
-      {{price}}
+      <a class="product-buy" href="Buy-Now">${{price}}</a>
     </div>
   </div>
 </template>

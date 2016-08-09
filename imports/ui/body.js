@@ -52,6 +52,20 @@ Template.body.events({
     const modal = document.getElementById('myModal');
 
     modal.style.display = "none";
-  }
+  },
+  'mouseenter .product-price' (event) {
+    event.preventDefault();
+
+    console.log('enter')
+  },
+  'mouseleave .product-price' (event) {
+    event.preventDefault();
+
+    console.log('exit')
+  },
+  // 'mouseenter .product-price': (event, template) ->
+  //   console.log "mousehover", event
+  // "mouseleave #elementID": (event, template) ->
+  //   console.log "mouseout", event
 
 });
