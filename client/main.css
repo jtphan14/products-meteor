@@ -1,6 +1,16 @@
+@font-face {
+    font-family: ProximaNovaSoft-Regular;
+    src:
+    url("/public/fonts/ProximaNovaSoft-Regular.otf"),
+}
+body {
+    font-family: Neuzeit;
+}
 body {
   background-color: #EEEFF1;
+  font-family: ProximaNovaSoft-Regular;
 }
+
 
 .container {
   padding-top: 10px;
