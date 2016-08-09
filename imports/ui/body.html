@@ -1,9 +1,17 @@
 <body>
+  <nav>
+    <ul>
+      <li><a href="#logo">Fifty&Fifty</a></li>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li style="float:right"><a class="active" href="#Account-Info">Account Info</a></li>
+      <li style="float:right">    {{> loginButtons}}</li>
+    </ul>
+  </nav>
   <div class="container main">
     <header>
       <h1>Todo List</h1>
     </header>
-    {{> loginButtons}}
     <div id="products-container" >
         {{#each products}}
           {{> product}}
