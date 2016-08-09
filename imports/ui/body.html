@@ -13,5 +13,18 @@
 </body>
 
 <template name="product">
-  <div class="col-sm-4">{{text}}</div>
+  <div class="col-sm-4 product">
+    <div class="product-picture">
+      {{picture}}
+    </div>
+    <div class="product-name">
+      {{text}}
+    </div>
+    <div class="product-description">
+      {{description}}
+    </div>
+    <div class="product-price">
+      {{price}}
+    </div>
+  </div>
 </template>
