@@ -1,2 +1,2 @@
 import '../imports/ui/body.js';
-import '../imports/api/products.js';
+import '../imports/startup/accounts-config.js';

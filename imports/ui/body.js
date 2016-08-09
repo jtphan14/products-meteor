@@ -1,3 +1,5 @@
+import { Meteor } from 'meteor/meteor';
+
 import { Template } from 'meteor/templating';
 
 import { Products } from '../api/products.js';
@@ -29,6 +31,8 @@ Template.body.events({
       description,
       price,
       createdAt: new Date(), // current time
+      owner: Meteor.userId(),
+      username: Meteor.user().username,
     });
 
   },
