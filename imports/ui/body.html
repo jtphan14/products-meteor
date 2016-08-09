@@ -1,0 +1,58 @@
+<body>
+  <nav class="navbar" role="navigation">
+    <ul>
+      <li><a href="#logo">Fifty&Fifty</a></li>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li style="float:right"><a href="#Account-Info">Account Info</a></li>
+      <li style="float:right">    {{> loginButtons}}</li>
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+      <div id="products-container" >
+          {{#each products}}
+            {{> product}}
+          {{/each}}
+      </div>
+
+    </div>
+  </main>
+  <section id = "new-product">
+      <!-- Trigger/Open The Modal -->
+    <div> <button id="myBtn">Add a New Product</button> </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">x</span>
+        <form class="new-product">
+          Product Name: <input type="text" name="name"><br>
+          Product Description: <input type="text" name="description"><br>
+          Product Price: <input type="integer" name="price"><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+    </div>
+  </section>
+</body>
+
+<template name="product">
+  <div class="col-sm-4 product">
+    <div class="product-picture">
+      <img src="{{picture}}">
+    </div>
+    <div class=" product-name">
+      {{text}}
+    </div>
+    <div class="product-description">
+      {{description}}
+    </div>
+    <div class="product-price">
+      <span> ${{price}} </span>
+    </div>
+  </div>
+</template>
