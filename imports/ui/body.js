@@ -34,6 +34,20 @@ Template.body.events({
       owner: Meteor.userId(),
       username: Meteor.user().username,
     });
-
   },
+  'click #myBtn' (event) {
+    event.preventDefault();
+
+    const modal = document.getElementById('myModal');
+
+    modal.style.display = "block";
+  },
+  'click .close' (event) {
+    event.preventDefault();
+
+    const modal = document.getElementById('myModal');
+
+    modal.style.display = "none";
+  }
+
 });
