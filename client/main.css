@@ -1,6 +1,5 @@
 body {
-  background-color: #BAB8B8;
-  max-width: 900px;
+  background-color: #EEEFF1;
 }
 
 .container {
@@ -11,33 +10,35 @@ main {
   display: inline-block;
   width: 70%;
   max-width: 70%;
+  margin-left: 20px;
+  margin-top:15px;
 }
 
 #new-product {
   display: inline-block;
   max-width: 20%;
   vertical-align: top;
+  margin-top: 30px//
   padding: 20px;
   min-width: 100px;
   float: right;
   word-wrap: normal;
 }
 .product{
-  border: 1px black;
   display: inline-block;
-  margin: 0 -0.125em;
   padding: 10px;
-
+  max-height: 400px;
 }
 
 .product-price {
-  background-color: #90C3D4;
+  background-color: #219CDC;
   color: white;
   padding: 10px;
 }
 
 .product-description {
   background-color: white;
+  padding-left: : 10px;
 }
 
 .product-picture {
@@ -47,6 +48,8 @@ main {
   font-size: 14px;
   font-weight: bolder;
   background-color: white;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .product-picture img {
@@ -57,12 +60,14 @@ main {
 input {
     width: 100%;
 }
+nav {
+  background-color: #33495E
+}
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     /*overflow: hidden;*/
-    background-color: #333;
 }
 
 nav li {
@@ -77,6 +82,14 @@ nav li a {
     text-decoration: none;
 }
 
+#myBtn {
+  background: #219CDC;
+  margin-top: 45px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  border: none;
+}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
