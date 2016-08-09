@@ -23,6 +23,8 @@ Template.body.events({
     const text = target.name.value;
     const description = target.description.value;
     const price = target.price.value;
+    const modal = document.getElementById('myModal');
+
 
     // Insert a task into the collection
     Products.insert({
@@ -34,6 +36,8 @@ Template.body.events({
       owner: Meteor.userId(),
       username: Meteor.user().username,
     });
+    modal.style.display = "none";
+
   },
   'click #myBtn' (event) {
     event.preventDefault();
